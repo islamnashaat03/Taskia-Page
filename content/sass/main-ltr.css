@@ -1,0 +1,85 @@
+@font-face {
+  font-family: poppins;
+  src: url(../css/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: muli-bold;
+  src: url(../css/fonts//Muli.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+.taskia-btn, .main-nav .main-nav__link a, .main-header .main-header__form button {
+  border: 2px solid;
+  padding: 8px 29px;
+  border-radius: 100px;
+}
+
+.main-nav {
+  padding: 57px 0;
+  margin-bottom: 150px;
+}
+
+.main-nav .main-nav__header {
+  color: #525ffb;
+  text-align: left;
+  font-family: poppins;
+  letter-spacing: -2.82px;
+  line-height: 0.38;
+  margin-bottom: 0;
+}
+
+.main-nav .main-nav__link {
+  text-align: right;
+  font-family: poppins;
+  line-height: 1.35;
+  letter-spacing: 1.08px;
+}
+
+.main-nav .main-nav__link a {
+  font-family: muli;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-nav .main-nav__link :hover {
+  background-color: #525ffb;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-header {
+  margin-bottom: 150px;
+}
+
+.main-header .main-header__title {
+  font-family: poppins;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.39;
+  letter-spacing: -0.49px;
+  color: #1e1c24;
+  text-align: left;
+}
+
+.main-header .main-header__paragraph {
+  font-family: muli;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #b1aaaa;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav__link {
+    margin-top: -15px;
+  }
+  .main-header__title {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=main-ltr.css.map */

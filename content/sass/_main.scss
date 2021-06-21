@@ -1,0 +1,350 @@
+@font-face {
+    font-family: poppins-bold;
+    src: url(../css/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family:poppins-black ;
+    src: url(../css/fonts/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: poppins-extrabold;
+    src: url(../css/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: muli-bold;
+    src: url(../css/fonts/Muli-Bold.ttf);
+}
+$main-color1:#525ffb;
+$main-color2:#fff;
+$paragrapg-color:#b1aaaa;
+$font1:poppins-bold;
+$font2:poppins-black;
+$font3: poppins-extrabold;
+$font4:muli-bold;
+$transtion:.5s;
+// START GENERIC COMPONENTS 
+
+a{text-decoration: none;}
+.taskia-btn{
+    border: 2px solid $main-color1;
+    padding: 8px 29px;
+    border-radius: 100px;
+}
+.hover{
+    color:$main-color1;
+    background-color: $main-color2;
+    transition: $transtion;
+}
+// body{    
+//     background: url(../../images/bg@2x.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+// END GENERIC COMPONENTS 
+.main-nav{
+    padding: 57px 0;
+    margin-bottom: 30px;
+    .main-nav__header{
+        color: $main-color1;
+        text-align: $start;
+        font-family: $font3;
+        font-weight: 800;
+        letter-spacing: -2.82px;
+        line-height: 0.38;
+        margin-bottom: 0;
+    }
+    .main-nav__link {
+        text-align: $end;
+        font-family: $font4;
+        line-height: 1.35;
+        letter-spacing: 1.08px;
+
+        a{
+    @extend.taskia-btn;
+            font-family:$font4 ;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        :hover{
+            background-color: $main-color1;
+            color: $main-color2;
+            transition: $transtion;
+        }
+    }
+// START MAIN HEADER 
+}
+.main-header {
+    margin-bottom: 150px;
+    .main-header__right-side{
+        background-image: url(../../images/Image\ 5.png);
+        background-repeat:no-repeat;background-size: contain;
+        background-position-x: $end;
+    }
+    .main-header__title {
+        font-size: 35px;
+        font-family: $font2;
+        font-weight:900 ;
+        line-height: 1.39;
+        letter-spacing: -0.49px;
+        color: #1e1c24;
+        text-align: $start;
+    }
+    .main-header__paragraph{
+        font-family: $font4;
+        font-size: 20px;
+        line-height: 1.75;
+        color: $paragrapg-color;
+        text-align: $start;
+        margin-bottom: 50px;
+    }
+    .main-header__form-input {
+        padding: 15px 80px 15px 20px;
+        border-radius: 100px;
+        border: solid 2px $paragrapg-color;
+        font-family: $font4;
+        margin-#{$end}: 25px;
+        margin-bottom: 25px;
+        outline: 0;
+    }
+    .main-header__form-input::placeholder{
+        color: #1e1c24d9;
+        letter-spacing: 0.8px;
+        line-height: 4.55;
+    }
+    .main-header__form button{
+        @extend.taskia-btn;
+        font-family: $font1;
+        padding:15px 40px;
+        color: $main-color2;
+        background-color: $main-color1;
+    }
+    .main-header__form button:hover{
+        @extend .hover
+    }
+}
+// END MAIN HEADER 
+// START FEATURED SERVICE 
+.service {
+    margin-bottom: 100px;
+    .sevice__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .service__main-header{
+        font-family: $font1;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        color: #1e1c24;
+        margin-bottom: 50px;
+    }
+    .my-card{
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        color: $main-color2;
+        margin-bottom: 20px;
+        .my-card__body{
+            padding: 5px;
+            text-align: center;
+        }
+        .my-card__title{
+            font-family: $font3;
+            width: 79%;
+            margin: auto;
+            font-weight: 800;
+            line-height: 1.33;
+            text-align: center;
+            color: #1e1c24;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .my-card__paragraph{
+            font-family: $font4;
+            font-size: 16px;
+            line-height: 1.63;
+            text-align: center;
+            color: #1e1c24;
+        }
+    }
+    .my-card--edit1{
+        border: 1px solid $main-color1;
+        border-radius: 15px;
+        background-color: $main-color1;
+        .my-card__paragraph{
+            color: #ffffff;
+        }
+        .my-card__title{
+            color: #ffffff;
+        }
+        .my-card__img{
+            margin-bottom: -35px;
+            margin-top: 35px;
+            padding: 10px;
+        }
+    }
+    .my-card--edit2{
+        border: 1px solid #e9f0ff;
+        border-radius: 15px;
+        background-color: #e9f0ff;
+        .my-card__img{
+            margin: auto;
+        }
+    }
+    .my-card--edit3{
+        border: 1px solid #ffe7aa;
+        border-radius: 15px;
+        background-color: #ffe7aa;
+        .my-card__img{
+            margin: auto;
+        }
+    }
+
+}
+// END FEATURED SERVICE 
+// START TASK SOFTWARE
+.task-software {
+    margin-bottom: 100px;
+    .task-software__left-side {
+        background-image: url(../../images/Image\ 8.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .task-software__header{
+        font-family: $font1;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #1e1c24;
+    }
+    .task-software__paragrapgh{
+        font-family: $font4;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.67;
+        color: #b1aaaa;
+        margin-bottom: 38px
+    }
+    .task-software__Learn-btn{
+        @extend .taskia-btn;
+        color:$main-color2;
+        background-color: $main-color1;
+        font-family: $font1;
+        padding: 18px 65px;
+        font-weight: 600;
+        letter-spacing: 0.92px;
+    }.task-software__Learn-btn:hover{
+        @extend .hover;
+    }
+} 
+// END TASK SOFTWARE 
+// START WORKFLOW 
+.workflow {
+    margin-bottom: 100px;
+    .workflow__header{
+        font-family: $font1;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #1e1c24;
+    }
+    .workflow__paragrapgh{
+        font-family: $font4;
+        font-size: 18px;
+        line-height: 1.67;
+        color: #b1aaaa;
+    }
+    .workflow__img1{
+        height: 53px;
+        margin-#{$end}: 30px;
+    }
+    .workflow__img2{height: 63px;}
+    .workflow__right-side{
+        background-image: url(../../images/Image\ 7.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+// END WORKFLOW 
+// START MEDAIA QUIERRIES 
+@media only screen and (max-width:768px) {
+    .main-nav__link{
+        margin-top: -15px;
+    }
+
+}
+@media only screen and (min-width:992px) {
+    .main-nav{
+        margin-bottom: 75px;
+    }
+    .main-header{
+        .main-header__title{
+        font-size: 40px ;
+        }
+    }
+    .service{
+        .service__main-header{
+            font-size: 40px;
+        }
+        .sevice__row {
+            flex-direction: row;
+        }
+        .my-card{
+            margin: 0 8px;
+        }
+    }
+    .task-software{
+        .task-software__header{
+            font-size: 40px;
+        }
+    }
+    
+}
+@media only screen and (min-width:1335px) {
+    .main-header {
+        margin-bottom: 268px;
+        .main-header__form-input{
+            padding: 18px 100px 18px 22px;
+            margin-#{$end}: 35px;
+        }
+        .main-header__title{
+            font-size: 48px;
+            }
+            .main-header__form button{
+                padding: 18px 45px;
+            }
+    }
+        .main-nav{
+            margin-bottom: 164px;
+        }
+    .service{
+        .my-card{
+            margin: 0 35px;
+        }
+    }
+    .workflow{
+        .workflow__header{
+            font-size: 50px;
+        }
+    } 
+
+}
+@media only screen and (min-width:1400px) {
+    .task-software{
+        .task-software__header{
+            font-size: 50px;
+        }
+        .task-software__left-side{
+            background-size: cover;
+        }
+        .task-software__header{
+            font-size: 50px;
+        }
+        .task-software__paragrapgh{
+            font-size: 18px;
+        }
+    }
+
+}
