@@ -64,6 +64,7 @@ a{text-decoration: none;}
             font-family:$font4 ;
             font-size: 20px;
             font-weight: bold;
+            box-shadow: none;
         }
         :hover{
             background-color: $main-color1;
@@ -119,7 +120,7 @@ a{text-decoration: none;}
         background-color: $main-color1;
     }
     .main-header__form button:hover{
-        @extend .hover
+        @extend .hover;
     }
 }
 // END MAIN HEADER 
@@ -268,6 +269,48 @@ a{text-decoration: none;}
     }
 }
 // END WORKFLOW 
+// START FOOTER 
+.main-footer {
+    text-align: center;
+    .main-footer__header {
+        font-family: $font1;
+        font-size: 30px;
+        line-height: 1.2;
+        color: #1e1c24;
+    }
+    .main-footer__paragraph{
+        font-family: $font4;
+        font-size: 24px;
+        font-weight: 300;
+        color: #666566;
+        
+    }
+    .main-footer__form{
+        display:flow-root;
+        margin-top: 40px;
+    }
+    .main-footer__form-input{
+        padding: 15px 80px 15px 20px;
+        border-radius: 100px;
+        border: solid 2px #b1aaaa;
+        font-family: muli-bold;
+        margin-bottom: 25px;
+        outline: 0;
+    }
+    .main-footer__form button {
+        @extend.taskia-btn;
+        color:$main-color2;
+        background-color: $main-color1;
+        padding: 18px 45px;
+        font-family:$font1 ;
+    }
+    .main-footer__form button:hover{
+        @extend.hover;
+    }
+
+    
+}
+// END FOOTER 
 // START MEDAIA QUIERRIES 
 @media only screen and (max-width:768px) {
     .main-nav__link{
@@ -300,6 +343,8 @@ a{text-decoration: none;}
             font-size: 40px;
         }
     }
+
+   
     
 }
 @media only screen and (min-width:1335px) {
@@ -329,7 +374,21 @@ a{text-decoration: none;}
             font-size: 50px;
         }
     } 
+    .main-footer{
+        .main-footer__header {
+            font-size: 50px;
+        }
+        .main-footer__paragraph {
+            width: 40%;
+            margin: auto;
+            font-size: 27px;
+        }
+        .main-footer__form-input{
+            padding: 15px 80px 15px 20px;
+            margin-#{$end}: 25px;
 
+        }
+    }
 }
 @media only screen and (min-width:1400px) {
     .task-software{

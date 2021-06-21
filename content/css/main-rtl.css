@@ -13,12 +13,12 @@
 a {
   text-decoration: none; }
 
-.taskia-btn, .main-nav .main-nav__link a, .main-header .main-header__form button, .task-software .task-software__Learn-btn {
+.taskia-btn, .main-nav .main-nav__link a, .main-header .main-header__form button, .task-software .task-software__Learn-btn, .main-footer .main-footer__form button {
   border: 2px solid #525ffb;
   padding: 8px 29px;
   border-radius: 100px; }
 
-.hover, .main-header .main-header__form button:hover, .task-software .task-software__Learn-btn:hover {
+.hover, .main-header .main-header__form button:hover, .task-software .task-software__Learn-btn:hover, .main-footer .main-footer__form button:hover {
   color: #525ffb;
   background-color: #fff;
   transition: 0.5s; }
@@ -42,7 +42,8 @@ a {
     .main-nav .main-nav__link a {
       font-family: muli-bold;
       font-size: 20px;
-      font-weight: bold; }
+      font-weight: bold;
+      box-shadow: none; }
     .main-nav .main-nav__link :hover {
       background-color: #525ffb;
       color: #fff;
@@ -202,6 +203,34 @@ a {
     background-repeat: no-repeat;
     background-size: contain; }
 
+.main-footer {
+  text-align: center; }
+  .main-footer .main-footer__header {
+    font-family: poppins-bold;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #1e1c24; }
+  .main-footer .main-footer__paragraph {
+    font-family: muli-bold;
+    font-size: 24px;
+    font-weight: 300;
+    color: #666566; }
+  .main-footer .main-footer__form {
+    display: flow-root;
+    margin-top: 40px; }
+  .main-footer .main-footer__form-input {
+    padding: 15px 80px 15px 20px;
+    border-radius: 100px;
+    border: solid 2px #b1aaaa;
+    font-family: muli-bold;
+    margin-bottom: 25px;
+    outline: 0; }
+  .main-footer .main-footer__form button {
+    color: #fff;
+    background-color: #525ffb;
+    padding: 18px 45px;
+    font-family: poppins-bold; }
+
 @media only screen and (max-width: 768px) {
   .main-nav__link {
     margin-top: -15px; } }
@@ -239,7 +268,17 @@ a {
     margin: 0 35px; }
 
   .workflow .workflow__header {
-    font-size: 50px; } }
+    font-size: 50px; }
+
+  .main-footer .main-footer__header {
+    font-size: 50px; }
+  .main-footer .main-footer__paragraph {
+    width: 40%;
+    margin: auto;
+    font-size: 27px; }
+  .main-footer .main-footer__form-input {
+    padding: 15px 80px 15px 20px;
+    margin-left: 25px; } }
 @media only screen and (min-width: 1400px) {
   .task-software .task-software__header {
     font-size: 50px; }
