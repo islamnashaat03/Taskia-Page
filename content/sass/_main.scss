@@ -1,4 +1,12 @@
 @font-face {
+    font-family: muli;
+    src: url(../css/fonts/Muli.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../css/fonts/Poppins-Regular.ttf);
+}
+@font-face {
     font-family: poppins-bold;
     src: url(../css/fonts/Poppins-Bold.ttf);
 }
@@ -14,16 +22,17 @@
     font-family: muli-bold;
     src: url(../css/fonts/Muli-Bold.ttf);
 }
+
 $main-color1:#525ffb;
 $main-color2:#fff;
 $paragrapg-color:#b1aaaa;
 $font1:poppins-bold;
 $font2:poppins-black;
-$font3: poppins-extrabold;
+$font3: poppins;
 $font4:muli-bold;
 $transtion:.5s;
 // START GENERIC COMPONENTS 
-
+img {max-width: 100%;}
 a{text-decoration: none;}
 .taskia-btn{
     border: 2px solid $main-color1;
@@ -43,7 +52,7 @@ a{text-decoration: none;}
 // END GENERIC COMPONENTS 
 .main-nav{
     padding: 57px 0;
-    margin-bottom: 30px;
+    margin-bottom: 75px;
     .main-nav__header{
         color: $main-color1;
         text-align: $start;
@@ -76,10 +85,14 @@ a{text-decoration: none;}
 }
 .main-header {
     margin-bottom: 150px;
-    .main-header__right-side{
-        background-image: url(../../images/Image\ 5.png);
-        background-repeat:no-repeat;background-size: contain;
-        background-position-x: $end;
+    .main-header__image{
+        // background-image: url(../../images/Image\ 5.png);
+        // background-repeat:no-repeat;background-size: contain;
+        // background-position-x: $end;
+    }
+    .main-header__info{
+        display: flex;
+        align-items: center;
     }
     .main-header__title {
         font-size: 35px;
@@ -146,25 +159,25 @@ a{text-decoration: none;}
         display: flex;
         flex-direction: column;
         color: $main-color2;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         .my-card__body{
             padding: 5px;
             text-align: center;
         }
         .my-card__title{
             font-family: $font3;
-            width: 79%;
+            // width: 76%;
             margin: auto;
             font-weight: 800;
             line-height: 1.33;
             text-align: center;
             color: #1e1c24;
             margin-bottom: 20px;
-            font-size: 30px;
+            // font-size: 30px;
         }
         .my-card__paragraph{
             font-family: $font4;
-            font-size: 16px;
+            // font-size: 16px;
             line-height: 1.63;
             text-align: center;
             color: #1e1c24;
@@ -181,9 +194,9 @@ a{text-decoration: none;}
             color: #ffffff;
         }
         .my-card__img{
-            margin-bottom: -35px;
-            margin-top: 35px;
-            padding: 10px;
+            // margin-bottom: -35px;
+            // margin-top: 35px;
+            // padding: 10px;
         }
     }
     .my-card--edit2{
@@ -191,7 +204,7 @@ a{text-decoration: none;}
         border-radius: 15px;
         background-color: #e9f0ff;
         .my-card__img{
-            margin: auto;
+            // margin: auto;
         }
     }
     .my-card--edit3{
@@ -199,7 +212,7 @@ a{text-decoration: none;}
         border-radius: 15px;
         background-color: #ffe7aa;
         .my-card__img{
-            margin: auto;
+            // margin: auto;
         }
     }
 
@@ -207,12 +220,7 @@ a{text-decoration: none;}
 // END FEATURED SERVICE 
 // START TASK SOFTWARE
 .task-software {
-    margin-bottom: 100px;
-    .task-software__left-side {
-        background-image: url(../../images/Image\ 8.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+    margin-bottom: 220px;
     .task-software__header{
         font-family: $font1;
         font-size: 30px;
@@ -222,11 +230,11 @@ a{text-decoration: none;}
     }
     .task-software__paragrapgh{
         font-family: $font4;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         line-height: 1.67;
         color: #b1aaaa;
-        margin-bottom: 38px
+        margin-bottom: 30px
     }
     .task-software__Learn-btn{
         @extend .taskia-btn;
@@ -243,25 +251,25 @@ a{text-decoration: none;}
 // END TASK SOFTWARE 
 // START WORKFLOW 
 .workflow {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
     .workflow__header{
         font-family: $font1;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: bold;
         line-height: 1.2;
         color: #1e1c24;
     }
     .workflow__paragrapgh{
         font-family: $font4;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.67;
         color: #b1aaaa;
+        margin-bottom: 25px;
     }
-    .workflow__img1{
-        height: 53px;
+    .workflow__icons{display: flow-root;}
+    .workflow__icons-1{
         margin-#{$end}: 30px;
     }
-    .workflow__img2{height: 63px;}
     .workflow__right-side{
         background-image: url(../../images/Image\ 7.png);
         background-repeat: no-repeat;
@@ -269,6 +277,25 @@ a{text-decoration: none;}
     }
 }
 // END WORKFLOW 
+// START TRUST US 
+.trust-us {
+    margin-bottom: 100px;
+    .trust-us__header {
+        font-family: $font1;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        color: #1e1c24;
+    }.trust-us__paragraph{
+        font-family: $font3;
+        font-size: 60px;
+        font-weight: 800;
+        text-align: center;
+        color: #525ffb;
+    }
+}
+// END TRUST US 
 // START FOOTER 
 .main-footer {
     text-align: center;
@@ -306,9 +333,7 @@ a{text-decoration: none;}
     }
     .main-footer__form button:hover{
         @extend.hover;
-    }
-
-    
+    }   
 }
 // END FOOTER 
 // START MEDAIA QUIERRIES 
@@ -316,15 +341,21 @@ a{text-decoration: none;}
     .main-nav__link{
         margin-top: -15px;
     }
+    .task-software__info {
+        margin-top: 40px;
+    }
+    .workflow__image{
+        margin-top: 40px;
+    }
+    .main-header__image{
+        margin-top: 40px;
+    }
 
 }
 @media only screen and (min-width:992px) {
-    .main-nav{
-        margin-bottom: 75px;
-    }
     .main-header{
         .main-header__title{
-        font-size: 40px ;
+        font-size: 48px ;
         }
     }
     .service{
@@ -335,43 +366,43 @@ a{text-decoration: none;}
             flex-direction: row;
         }
         .my-card{
-            margin: 0 8px;
+            // margin: 0 8px;
         }
     }
     .task-software{
         .task-software__header{
-            font-size: 40px;
+            font-size: 32px;
+        }
+        .task-software__info {
+            margin-#{$start}: 40px;
         }
     }
-
-   
-    
+    .trust-us{
+        .trust-us__paragraph{
+            font-size: 95px;
+        }
+    }   
 }
 @media only screen and (min-width:1335px) {
     .main-header {
-        margin-bottom: 268px;
+        margin-bottom: 270px;
         .main-header__form-input{
             padding: 18px 100px 18px 22px;
             margin-#{$end}: 35px;
         }
-        .main-header__title{
-            font-size: 48px;
-            }
             .main-header__form button{
                 padding: 18px 45px;
             }
     }
-        .main-nav{
-            margin-bottom: 164px;
-        }
     .service{
+        margin-bottom: 300px;
         .my-card{
-            margin: 0 35px;
+            // margin: 0 35px;
         }
     }
     .workflow{
         .workflow__header{
-            font-size: 50px;
+            font-size: 40px;
         }
     } 
     .main-footer{
@@ -391,19 +422,36 @@ a{text-decoration: none;}
     }
 }
 @media only screen and (min-width:1400px) {
+    .main-header__title{
+        font-size: 60px;
+    }
+    .service{
+        margin-bottom: 400px;
+    }
     .task-software{
+        margin-bottom: 385px;
         .task-software__header{
             font-size: 50px;
         }
-        .task-software__left-side{
-            background-size: cover;
-        }
         .task-software__header{
-            font-size: 50px;
+            font-size: 39px;
         }
         .task-software__paragrapgh{
-            font-size: 18px;
+            font-size: 13px;
         }
     }
+    .workflow{
+        .workflow__header{
+            font-size: 50px;
+        }
+    }
+    .trust-us {
+        .trust-us__header {
+            font-size: 50px;
+        }
+        .trust-us__paragraph{
+            font-size: 150px;
 
+        }
+    }
 }

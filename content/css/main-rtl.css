@@ -1,4 +1,10 @@
 @font-face {
+  font-family: muli;
+  src: url(../css/fonts/Muli.ttf); }
+@font-face {
+  font-family: poppins;
+  src: url(../css/fonts/Poppins-Regular.ttf); }
+@font-face {
   font-family: poppins-bold;
   src: url(../css/fonts/Poppins-Bold.ttf); }
 @font-face {
@@ -10,6 +16,9 @@
 @font-face {
   font-family: muli-bold;
   src: url(../css/fonts/Muli-Bold.ttf); }
+img {
+  max-width: 100%; }
+
 a {
   text-decoration: none; }
 
@@ -25,11 +34,11 @@ a {
 
 .main-nav {
   padding: 57px 0;
-  margin-bottom: 30px; }
+  margin-bottom: 75px; }
   .main-nav .main-nav__header {
     color: #525ffb;
     text-align: right;
-    font-family: poppins-extrabold;
+    font-family: poppins;
     font-weight: 800;
     letter-spacing: -2.82px;
     line-height: 0.38;
@@ -51,11 +60,9 @@ a {
 
 .main-header {
   margin-bottom: 150px; }
-  .main-header .main-header__right-side {
-    background-image: url(../../images/Image\ 5.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: left; }
+  .main-header .main-header__info {
+    display: flex;
+    align-items: center; }
   .main-header .main-header__title {
     font-size: 35px;
     font-family: poppins-black;
@@ -107,24 +114,20 @@ a {
     margin: 5px;
     display: flex;
     flex-direction: column;
-    color: #fff;
-    margin-bottom: 20px; }
+    color: #fff; }
     .service .my-card .my-card__body {
       padding: 5px;
       text-align: center; }
     .service .my-card .my-card__title {
-      font-family: poppins-extrabold;
-      width: 79%;
+      font-family: poppins;
       margin: auto;
       font-weight: 800;
       line-height: 1.33;
       text-align: center;
       color: #1e1c24;
-      margin-bottom: 20px;
-      font-size: 30px; }
+      margin-bottom: 20px; }
     .service .my-card .my-card__paragraph {
       font-family: muli-bold;
-      font-size: 16px;
       line-height: 1.63;
       text-align: center;
       color: #1e1c24; }
@@ -136,29 +139,17 @@ a {
       color: #ffffff; }
     .service .my-card--edit1 .my-card__title {
       color: #ffffff; }
-    .service .my-card--edit1 .my-card__img {
-      margin-bottom: -35px;
-      margin-top: 35px;
-      padding: 10px; }
   .service .my-card--edit2 {
     border: 1px solid #e9f0ff;
     border-radius: 15px;
     background-color: #e9f0ff; }
-    .service .my-card--edit2 .my-card__img {
-      margin: auto; }
   .service .my-card--edit3 {
     border: 1px solid #ffe7aa;
     border-radius: 15px;
     background-color: #ffe7aa; }
-    .service .my-card--edit3 .my-card__img {
-      margin: auto; }
 
 .task-software {
-  margin-bottom: 100px; }
-  .task-software .task-software__left-side {
-    background-image: url(../../images/Image\ 8.png);
-    background-size: contain;
-    background-repeat: no-repeat; }
+  margin-bottom: 220px; }
   .task-software .task-software__header {
     font-family: poppins-bold;
     font-size: 30px;
@@ -167,11 +158,11 @@ a {
     color: #1e1c24; }
   .task-software .task-software__paragrapgh {
     font-family: muli-bold;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 1.67;
     color: #b1aaaa;
-    margin-bottom: 38px; }
+    margin-bottom: 30px; }
   .task-software .task-software__Learn-btn {
     color: #fff;
     background-color: #525ffb;
@@ -181,27 +172,43 @@ a {
     letter-spacing: 0.92px; }
 
 .workflow {
-  margin-bottom: 100px; }
+  margin-bottom: 160px; }
   .workflow .workflow__header {
     font-family: poppins-bold;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1.2;
     color: #1e1c24; }
   .workflow .workflow__paragrapgh {
     font-family: muli-bold;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.67;
-    color: #b1aaaa; }
-  .workflow .workflow__img1 {
-    height: 53px;
+    color: #b1aaaa;
+    margin-bottom: 25px; }
+  .workflow .workflow__icons {
+    display: flow-root; }
+  .workflow .workflow__icons-1 {
     margin-left: 30px; }
-  .workflow .workflow__img2 {
-    height: 63px; }
   .workflow .workflow__right-side {
     background-image: url(../../images/Image\ 7.png);
     background-repeat: no-repeat;
     background-size: contain; }
+
+.trust-us {
+  margin-bottom: 100px; }
+  .trust-us .trust-us__header {
+    font-family: poppins-bold;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: #1e1c24; }
+  .trust-us .trust-us__paragraph {
+    font-family: poppins;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    color: #525ffb; }
 
 .main-footer {
   text-align: center; }
@@ -233,42 +240,46 @@ a {
 
 @media only screen and (max-width: 768px) {
   .main-nav__link {
-    margin-top: -15px; } }
-@media only screen and (min-width: 992px) {
-  .main-nav {
-    margin-bottom: 75px; }
+    margin-top: -15px; }
 
+  .task-software__info {
+    margin-top: 40px; }
+
+  .workflow__image {
+    margin-top: 40px; }
+
+  .main-header__image {
+    margin-top: 40px; } }
+@media only screen and (min-width: 992px) {
   .main-header .main-header__title {
-    font-size: 40px; }
+    font-size: 48px; }
 
   .service .service__main-header {
     font-size: 40px; }
   .service .sevice__row {
     flex-direction: row; }
-  .service .my-card {
-    margin: 0 8px; }
 
   .task-software .task-software__header {
-    font-size: 40px; } }
+    font-size: 32px; }
+  .task-software .task-software__info {
+    margin-right: 40px; }
+
+  .trust-us .trust-us__paragraph {
+    font-size: 95px; } }
 @media only screen and (min-width: 1335px) {
   .main-header {
-    margin-bottom: 268px; }
+    margin-bottom: 270px; }
     .main-header .main-header__form-input {
       padding: 18px 100px 18px 22px;
       margin-left: 35px; }
-    .main-header .main-header__title {
-      font-size: 48px; }
     .main-header .main-header__form button {
       padding: 18px 45px; }
 
-  .main-nav {
-    margin-bottom: 164px; }
-
-  .service .my-card {
-    margin: 0 35px; }
+  .service {
+    margin-bottom: 300px; }
 
   .workflow .workflow__header {
-    font-size: 50px; }
+    font-size: 40px; }
 
   .main-footer .main-footer__header {
     font-size: 50px; }
@@ -280,13 +291,27 @@ a {
     padding: 15px 80px 15px 20px;
     margin-left: 25px; } }
 @media only screen and (min-width: 1400px) {
-  .task-software .task-software__header {
+  .main-header__title {
+    font-size: 60px; }
+
+  .service {
+    margin-bottom: 400px; }
+
+  .task-software {
+    margin-bottom: 385px; }
+    .task-software .task-software__header {
+      font-size: 50px; }
+    .task-software .task-software__header {
+      font-size: 39px; }
+    .task-software .task-software__paragrapgh {
+      font-size: 13px; }
+
+  .workflow .workflow__header {
     font-size: 50px; }
-  .task-software .task-software__left-side {
-    background-size: cover; }
-  .task-software .task-software__header {
+
+  .trust-us .trust-us__header {
     font-size: 50px; }
-  .task-software .task-software__paragrapgh {
-    font-size: 18px; } }
+  .trust-us .trust-us__paragraph {
+    font-size: 150px; } }
 
 /*# sourceMappingURL=main-rtl.css.map */
