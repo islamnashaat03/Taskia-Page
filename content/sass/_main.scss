@@ -150,18 +150,18 @@ a{text-decoration: none;}
         }
         .my-card__title{
             font-family: $font3;
-            // width: 76%;
+            width: 76%;
             margin: auto;
             font-weight: 800;
             line-height: 1.33;
             text-align: center;
             color: #1e1c24;
             margin-bottom: 20px;
-            // font-size: 30px;
+            font-size: 30px;
         }
         .my-card__paragraph{
             font-family: $font4;
-            // font-size: 16px;
+            font-size: 16px;
             line-height: 1.63;
             text-align: center;
             color: #1e1c24;
@@ -332,7 +332,9 @@ a{text-decoration: none;}
             margin-bottom: 25px;
     }
     }
- 
+    .service{
+        .my-card{height: 100%;}
+    }
 
 }
 @media only screen and (min-width:992px) {
@@ -347,6 +349,13 @@ a{text-decoration: none;}
         }
         .sevice__row {
             flex-direction: row;
+        }
+        .my-card{
+            margin: 35px; 
+        }
+        .my-card__img{
+            width: 240px;
+            margin: auto;
         }
     }
     .task-software{
@@ -384,6 +393,11 @@ a{text-decoration: none;}
     .service{
         margin-bottom: 300px;
     }
+    .task-software{
+        .task-software__info{
+            width: 80%;
+        }
+    }
     .workflow{
         .workflow__header{
             font-size: 40px;
@@ -412,9 +426,6 @@ a{text-decoration: none;}
         .main-header__title{
             font-size: 60px;
         }
-    }
-    .service{
-        margin-bottom: 400px;
     }
     .task-software{
         margin-bottom: 385px;
