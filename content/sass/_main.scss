@@ -1,8 +1,4 @@
 @font-face {
-    font-family: muli;
-    src: url(../css/fonts/Muli.ttf);
-}
-@font-face {
     font-family: poppins;
     src: url(../css/fonts/Poppins-Regular.ttf);
 }
@@ -22,7 +18,6 @@
     font-family: muli-bold;
     src: url(../css/fonts/Muli-Bold.ttf);
 }
-
 $main-color1:#525ffb;
 $main-color2:#fff;
 $paragrapg-color:#b1aaaa;
@@ -44,11 +39,6 @@ a{text-decoration: none;}
     background-color: $main-color2;
     transition: $transtion;
 }
-// body{    
-//     background: url(../../images/bg@2x.png);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
 // END GENERIC COMPONENTS 
 .main-nav{
     padding: 57px 0;
@@ -67,7 +57,6 @@ a{text-decoration: none;}
         font-family: $font4;
         line-height: 1.35;
         letter-spacing: 1.08px;
-
         a{
     @extend.taskia-btn;
             font-family:$font4 ;
@@ -85,11 +74,6 @@ a{text-decoration: none;}
 }
 .main-header {
     margin-bottom: 150px;
-    .main-header__image{
-        // background-image: url(../../images/Image\ 5.png);
-        // background-repeat:no-repeat;background-size: contain;
-        // background-position-x: $end;
-    }
     .main-header__info{
         display: flex;
         align-items: center;
@@ -193,27 +177,17 @@ a{text-decoration: none;}
         .my-card__title{
             color: #ffffff;
         }
-        .my-card__img{
-            // margin-bottom: -35px;
-            // margin-top: 35px;
-            // padding: 10px;
-        }
     }
     .my-card--edit2{
         border: 1px solid #e9f0ff;
         border-radius: 15px;
         background-color: #e9f0ff;
-        .my-card__img{
-            // margin: auto;
-        }
+
     }
     .my-card--edit3{
         border: 1px solid #ffe7aa;
         border-radius: 15px;
         background-color: #ffe7aa;
-        .my-card__img{
-            // margin: auto;
-        }
     }
 
 }
@@ -279,7 +253,7 @@ a{text-decoration: none;}
 // END WORKFLOW 
 // START TRUST US 
 .trust-us {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
     .trust-us__header {
         font-family: $font1;
         font-size: 30px;
@@ -287,6 +261,7 @@ a{text-decoration: none;}
         line-height: 1.2;
         text-align: center;
         color: #1e1c24;
+        margin-bottom: 0;
     }.trust-us__paragraph{
         font-family: $font3;
         font-size: 60px;
@@ -310,6 +285,7 @@ a{text-decoration: none;}
         font-size: 24px;
         font-weight: 300;
         color: #666566;
+        margin-bottom: 60px;
         
     }
     .main-footer__form{
@@ -350,6 +326,13 @@ a{text-decoration: none;}
     .main-header__image{
         margin-top: 40px;
     }
+    .trust-us{
+        .trust-us__header {
+            font-size: 26px;
+            margin-bottom: 25px;
+    }
+    }
+ 
 
 }
 @media only screen and (min-width:992px) {
@@ -365,9 +348,6 @@ a{text-decoration: none;}
         .sevice__row {
             flex-direction: row;
         }
-        .my-card{
-            // margin: 0 8px;
-        }
     }
     .task-software{
         .task-software__header{
@@ -381,11 +361,18 @@ a{text-decoration: none;}
         .trust-us__paragraph{
             font-size: 95px;
         }
+        .trust-us__postion{
+            position: relative;
+        }
+        .trust-us__postion-image{
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+        }
     }   
 }
 @media only screen and (min-width:1335px) {
     .main-header {
-        margin-bottom: 270px;
         .main-header__form-input{
             padding: 18px 100px 18px 22px;
             margin-#{$end}: 35px;
@@ -396,9 +383,6 @@ a{text-decoration: none;}
     }
     .service{
         margin-bottom: 300px;
-        .my-card{
-            // margin: 0 35px;
-        }
     }
     .workflow{
         .workflow__header{
@@ -410,9 +394,10 @@ a{text-decoration: none;}
             font-size: 50px;
         }
         .main-footer__paragraph {
-            width: 40%;
-            margin: auto;
+            width: 48%;
+            margin: 0 auto 40px;
             font-size: 27px;
+            
         }
         .main-footer__form-input{
             padding: 15px 80px 15px 20px;
@@ -422,8 +407,11 @@ a{text-decoration: none;}
     }
 }
 @media only screen and (min-width:1400px) {
-    .main-header__title{
-        font-size: 60px;
+    .main-header {
+        margin-bottom: 270px;
+        .main-header__title{
+            font-size: 60px;
+        }
     }
     .service{
         margin-bottom: 400px;
@@ -446,6 +434,7 @@ a{text-decoration: none;}
         }
     }
     .trust-us {
+            margin-bottom: 210px;
         .trust-us__header {
             font-size: 50px;
         }

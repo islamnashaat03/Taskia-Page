@@ -1,7 +1,4 @@
 @font-face {
-  font-family: muli;
-  src: url(../css/fonts/Muli.ttf); }
-@font-face {
   font-family: poppins;
   src: url(../css/fonts/Poppins-Regular.ttf); }
 @font-face {
@@ -195,14 +192,15 @@ a {
     background-size: contain; }
 
 .trust-us {
-  margin-bottom: 100px; }
+  margin-bottom: 160px; }
   .trust-us .trust-us__header {
     font-family: poppins-bold;
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    color: #1e1c24; }
+    color: #1e1c24;
+    margin-bottom: 0; }
   .trust-us .trust-us__paragraph {
     font-family: poppins;
     font-size: 60px;
@@ -221,7 +219,8 @@ a {
     font-family: muli-bold;
     font-size: 24px;
     font-weight: 300;
-    color: #666566; }
+    color: #666566;
+    margin-bottom: 60px; }
   .main-footer .main-footer__form {
     display: flow-root;
     margin-top: 40px; }
@@ -249,7 +248,11 @@ a {
     margin-top: 40px; }
 
   .main-header__image {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+
+  .trust-us .trust-us__header {
+    font-size: 26px;
+    margin-bottom: 25px; } }
 @media only screen and (min-width: 992px) {
   .main-header .main-header__title {
     font-size: 48px; }
@@ -265,15 +268,19 @@ a {
     margin-right: 40px; }
 
   .trust-us .trust-us__paragraph {
-    font-size: 95px; } }
+    font-size: 95px; }
+  .trust-us .trust-us__postion {
+    position: relative; }
+  .trust-us .trust-us__postion-image {
+    position: absolute;
+    bottom: 0;
+    left: 25%; } }
 @media only screen and (min-width: 1335px) {
-  .main-header {
-    margin-bottom: 270px; }
-    .main-header .main-header__form-input {
-      padding: 18px 100px 18px 22px;
-      margin-left: 35px; }
-    .main-header .main-header__form button {
-      padding: 18px 45px; }
+  .main-header .main-header__form-input {
+    padding: 18px 100px 18px 22px;
+    margin-left: 35px; }
+  .main-header .main-header__form button {
+    padding: 18px 45px; }
 
   .service {
     margin-bottom: 300px; }
@@ -284,15 +291,17 @@ a {
   .main-footer .main-footer__header {
     font-size: 50px; }
   .main-footer .main-footer__paragraph {
-    width: 40%;
-    margin: auto;
+    width: 48%;
+    margin: 0 auto 40px;
     font-size: 27px; }
   .main-footer .main-footer__form-input {
     padding: 15px 80px 15px 20px;
     margin-left: 25px; } }
 @media only screen and (min-width: 1400px) {
-  .main-header__title {
-    font-size: 60px; }
+  .main-header {
+    margin-bottom: 270px; }
+    .main-header .main-header__title {
+      font-size: 60px; }
 
   .service {
     margin-bottom: 400px; }
@@ -309,9 +318,11 @@ a {
   .workflow .workflow__header {
     font-size: 50px; }
 
-  .trust-us .trust-us__header {
-    font-size: 50px; }
-  .trust-us .trust-us__paragraph {
-    font-size: 150px; } }
+  .trust-us {
+    margin-bottom: 210px; }
+    .trust-us .trust-us__header {
+      font-size: 50px; }
+    .trust-us .trust-us__paragraph {
+      font-size: 150px; } }
 
 /*# sourceMappingURL=main-rtl.css.map */
