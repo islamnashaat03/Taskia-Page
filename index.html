@@ -166,10 +166,12 @@
 <footer class="text-center main-footer ">
     <h2 class="main-footer__header">Get better work done</h2>
     <p class="main-footer__paragraph">See why millions of people across 195 countries  use Dash.</p>
-    <form action="" class="main-footer__form text-center" method="POST" name="myForm" onsubmit="return validateForm()" >
-        <input type="email" class="main-footer__form-input" placeholder="Name@company.com" name="fname">
+    <form action="" class="main-footer__form text-center" method="POST" name="myForm"  >
+        <input type="email" class="main-footer__form-input" placeholder="Name@company.com" name="fname" id="txtEmail" onkeyup="ValidateEmail();"/>
         <button class="btn" type="submit" value="submit" >Try it free</button>
+        <span id="mailErorr" style="color: red; font-weight: bold;" ></span>
     </form>
+   
 </footer>
 
 <!-- END FOOTER  -->
