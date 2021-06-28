@@ -1,5 +1,4 @@
-
-    if (window.matchMedia("(max-width: 991px)").matches) { 
+if (window.matchMedia("(max-width: 991px)").matches) { 
         $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
@@ -29,6 +28,6 @@
         if (!expr.test(email)) {
             mailErorr.innerHTML = "Invalid email address.";
         }
-    }
+    };
 
 
