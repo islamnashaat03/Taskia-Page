@@ -78,13 +78,13 @@ a {
   .main-header .main-header__form-input {
     padding: 15px 80px 15px 20px;
     border-radius: 100px;
-    border: solid 2px #b1aaaa;
+    border: solid 2px #ebebeb;
     font-family: muli-bold;
     margin-right: 25px;
     margin-bottom: 25px;
     outline: 0; }
   .main-header .main-header__form-input::placeholder {
-    color: #1e1c24d9;
+    color: #1e1c245c;
     letter-spacing: 0.8px;
     line-height: 4.55; }
   .main-header .main-header__form button {
@@ -230,10 +230,14 @@ a {
   .main-footer .main-footer__form-input {
     padding: 15px 80px 15px 20px;
     border-radius: 100px;
-    border: solid 2px #b1aaaa;
+    border: solid 2px #ebebeb;
     font-family: muli-bold;
     margin-bottom: 25px;
     outline: 0; }
+  .main-footer .main-footer__form-input::placeholder {
+    color: #1e1c245c;
+    letter-spacing: 0.8px;
+    line-height: 4.55; }
   .main-footer .main-footer__form button {
     color: #fff;
     background-color: #525ffb;
